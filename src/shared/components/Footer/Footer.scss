@@ -1,0 +1,56 @@
+@import "../../../base";
+
+.footer {
+  background-color: $color-secondary;
+  grid-column: full-start / full-end;
+  padding: 8rem;
+  padding-top: 8rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  @media only screen and (max-width: $bp-small) {
+    position: static;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.nav {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  align-items: center;
+
+  &__link:link,
+  &__link:visited {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Lato";
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all 0.2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    background-color: rgba(#fff, 0.05);
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.4);
+  }
+}
+.copyright {
+  font-size: 1.4rem;
+  color: $color-grey-light-2;
+  margin-top: 6rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,48 @@
+@import "../../../base";
+
+.header {
+  background-color: $color-grey-dark-1;
+  grid-column: full-start / full-end;
+
+  background-image: linear-gradient(
+      rgba($color-secondary, 0.90),
+      rgba($color-secondary, 0.90)
+    ),
+    url("../../../public/images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-items: center;
+
+    display: grid;
+    grid-template-rows: 1fr min-content 6rem 1fr;
+    row-gap: 1.5rem;
+
+
+
+    &__btn {
+        align-self: start;
+        justify-self: center;
+    }
+    &__card {
+        text-align: center;
+        padding: 5rem;
+        background-color: #fff;
+        width: 80%;
+        transform: translateY(70%);
+        box-shadow: 0 .5rem 4rem rgba(0, 0, 0, 0.2);
+    }
+
+    &__text {
+        font-size: 1.7rem;
+        color: $color-grey-dark-1;
+    }
+
+     h2 {
+        font-style: normal;
+     }
+
+
+     @media only screen and (max-width: $bp-medium) {
+        grid-template-rows: 2fr min-content 6rem 1fr;
+      }
+}

@@ -1,0 +1,60 @@
+@import "../../../base";
+
+.main__nav--links {
+  & li {
+    display: inline-block;
+    margin-left: 3rem;
+    &:not(:last-of-type) {
+      padding: 0 1rem;
+    }
+  }
+  & .main__nav-btn {
+    padding: 1.4rem 2.5rem;
+  }
+  & a {
+    position: relative;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: #fff;
+
+    & .invisible {
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      line-height: 1.2;
+      opacity: 0;
+      visibility: hidden;
+      color: $color-primary;
+      transition: all 0.2s;
+    }
+    & .visible {
+      display: inline-block;
+      position: relative;
+      transition: all 0.2s;
+    }
+  }
+  & li:hover .invisible {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  & li:hover .visible {
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    & li {
+      display: none;
+    }
+  }
+}

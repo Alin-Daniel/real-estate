@@ -1,0 +1,56 @@
+@import "../../../../base";
+
+.toggle-btn {
+  cursor: pointer;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-on {
+  .nav-btn {
+    background-color: transparent;
+  }
+  .nav-btn::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .nav-btn::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+.nav-btn {
+  background-color: #fff;
+  height: 2px;
+  width: 4.5rem;
+  display: inline-block;
+  position: relative;
+
+  &:before,
+  &:after {
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    width: 4.5rem;
+    content: "";
+    display: block;
+    transition: all 0.2s;
+  }
+
+  &:after {
+    top: 1px;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    &:before {
+      transform: translateY(-1.2rem);
+    }
+
+    &:after {
+      transform: translateY(1rem);
+    }
+  }
+}

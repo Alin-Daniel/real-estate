@@ -1,25 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import "./shared/components/Navigation/MainNav";
+import "./App.scss";
+
+import Header from "./shared/components/Navigation/Header";
+import Features from "./shared/components/Features/Features";
+import Gallery from "./shared/components/Gallery/Gallery";
+import Feedback from "./shared/components/Feedback/Feedback";
+import Footer from "./shared/components/Footer/Footer";
+import Houses from "./shared/components/Houses/Houses";
+import Brands from "./shared/components/Brands/Brands";
+import SideDrawer from "./shared/components/UI/SideDrawer/SideDrawer";
 
 function App() {
+  const [isToggled, setIsToggled] = useState(false);
+  const toggleSideDrawer = () => {
+    setIsToggled(prevState => !prevState);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Router>
+        <main>
+          <SideDrawer show={isToggled} />
+          <Header show={isToggled} onToggle={toggleSideDrawer} />
+          <Brands />
+          <Features />
+          <Feedback />
+          <Houses />
+          <Gallery />
+        </main>
+        <Footer />
+      </Router>
+    </React.Fragment>
   );
 }
 

@@ -1,0 +1,29 @@
+@import '../../../base';
+
+.main__nav {
+    // background-color: $color-primary;
+    grid-column: full-start / -1;
+    justify-self: end;
+    align-self: start;
+    padding: 4rem;
+    margin: 0 5rem 5rem 0;
+    .sidebar {
+        display: none;
+    }
+    
+    @media only screen and (max-width: $bp-large) {
+        & .sidebar {
+            display: flex;
+            position: fixed;
+            align-items: center;
+            justify-content: flex-end;
+            top: 0;
+            right: 0;
+            grid-column: 1 / -1;
+            & .toggle-btn {
+                margin-right: 2rem;
+            }
+        }
+        justify-self: stretch;
+    }
+}

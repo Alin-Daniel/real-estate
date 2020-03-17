@@ -1,0 +1,71 @@
+@import "../../../../base";
+
+.side__drawer {
+  position: fixed;
+  right: -100vw;
+  width: 100vw;
+  height: 100vh;
+  z-index: 900;
+  background-image: linear-gradient(
+      rgba($color-secondary, 0.9),
+      rgba($color-secondary, 0.9)
+    ),
+    url("../../../../public/images//hero.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all .4s ease-in-out;
+
+  .side__links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    transition: all .5s;
+    transition-delay: .2s;
+    opacity: 0;
+    transform: translateX(30%);
+
+    li {
+      display: block;
+      margin: 1.7rem;
+      
+      & .side__link {
+          display: inline-block;
+          padding: .5rem;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 3rem;
+          color: #fff;
+          transition: all 0.2s;
+          border-bottom: 2px solid transparent;
+
+        &:hover,
+        &:active,
+        &.active {
+          color: $color-primary;
+          border-bottom: 2px solid $color-primary;
+        }
+      }
+    }
+    li:last-of-type {
+        margin-top: 4rem;
+    }
+    & .btn--ghost {
+        font-size: 3rem;
+    }
+  }
+}
+
+.show {
+  right: 0;
+  .side__links {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
