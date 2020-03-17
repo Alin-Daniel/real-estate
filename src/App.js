@@ -21,7 +21,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <Router>
+      <Router basename='/real-estate'>
         <main>
           <SideDrawer show={isToggled} />
           <Header show={isToggled} onToggle={toggleSideDrawer} />
