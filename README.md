@@ -1,4 +1,18 @@
+## Introduction
+
+Hi there!
+I created this nice looking Real Estate website. It has a neat design and it is responsive.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## App link
+You can see a live demo on Github pages [here](https://alin-daniel.github.io/real-estate/)
+
+## Technologies:
+
+- ReactJS
+- HTML
+- SASS
 
 ## Available Scripts
 
