@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import "./shared/components/Navigation/MainNav";
 import "./App.scss";
@@ -22,6 +22,7 @@ function App() {
   return (
     <React.Fragment>
       <Router basename='/real-estate'>
+        <Route path='/'>
         <main>
           <SideDrawer show={isToggled} />
           <Header show={isToggled} onToggle={toggleSideDrawer} />
@@ -32,6 +33,7 @@ function App() {
           <Gallery />
         </main>
         <Footer />
+        </Route>
       </Router>
     </React.Fragment>
   );
