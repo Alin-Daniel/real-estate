@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/real-estate/static/css/main.ce83470a.chunk.css",
-    "main.js": "/real-estate/static/js/main.db6a0cc6.chunk.js",
-    "main.js.map": "/real-estate/static/js/main.db6a0cc6.chunk.js.map",
+    "main.js": "/real-estate/static/js/main.d68d6ae4.chunk.js",
+    "main.js.map": "/real-estate/static/js/main.d68d6ae4.chunk.js.map",
     "runtime-main.js": "/real-estate/static/js/runtime-main.d07c5e9b.js",
     "runtime-main.js.map": "/real-estate/static/js/runtime-main.d07c5e9b.js.map",
     "static/css/2.1d5701bb.chunk.css": "/real-estate/static/css/2.1d5701bb.chunk.css",
     "static/js/2.04185ee1.chunk.js": "/real-estate/static/js/2.04185ee1.chunk.js",
     "static/js/2.04185ee1.chunk.js.map": "/real-estate/static/js/2.04185ee1.chunk.js.map",
     "index.html": "/real-estate/index.html",
-    "precache-manifest.dfa368e88d15043912419f94fba77177.js": "/real-estate/precache-manifest.dfa368e88d15043912419f94fba77177.js",
+    "precache-manifest.7b9ecc66ee5ce398e4346d5a373474cd.js": "/real-estate/precache-manifest.7b9ecc66ee5ce398e4346d5a373474cd.js",
     "service-worker.js": "/real-estate/service-worker.js",
     "static/css/2.1d5701bb.chunk.css.map": "/real-estate/static/css/2.1d5701bb.chunk.css.map",
     "static/css/main.ce83470a.chunk.css.map": "/real-estate/static/css/main.ce83470a.chunk.css.map",
@@ -35,6 +35,6 @@
     "static/css/2.1d5701bb.chunk.css",
     "static/js/2.04185ee1.chunk.js",
     "static/css/main.ce83470a.chunk.css",
-    "static/js/main.db6a0cc6.chunk.js"
+    "static/js/main.d68d6ae4.chunk.js"
   ]
 }
