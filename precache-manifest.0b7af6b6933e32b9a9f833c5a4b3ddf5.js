@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e7bae5f256982a5e96203c6c1ee5d801",
+    "revision": "acd0a83deb22dbe849b7e936abae3a9f",
     "url": "/real-estate/index.html"
   },
   {
-    "revision": "b0288ed7aedcac7718bd",
-    "url": "/real-estate/static/css/2.1d5701bb.chunk.css"
+    "revision": "2f070471dcda258dea4c",
+    "url": "/real-estate/static/css/2.bd41d190.chunk.css"
   },
   {
-    "revision": "ae3148a2879140300d31",
+    "revision": "efc701678008dd9fc159",
     "url": "/real-estate/static/css/main.ce83470a.chunk.css"
   },
   {
-    "revision": "b0288ed7aedcac7718bd",
-    "url": "/real-estate/static/js/2.04185ee1.chunk.js"
+    "revision": "2f070471dcda258dea4c",
+    "url": "/real-estate/static/js/2.09395975.chunk.js"
   },
   {
     "revision": "c099810c3c102db7a44755001529c804",
-    "url": "/real-estate/static/js/2.04185ee1.chunk.js.LICENSE.txt"
+    "url": "/real-estate/static/js/2.09395975.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ae3148a2879140300d31",
-    "url": "/real-estate/static/js/main.a86dcaeb.chunk.js"
+    "revision": "efc701678008dd9fc159",
+    "url": "/real-estate/static/js/main.72597209.chunk.js"
   },
   {
     "revision": "a7a0dc842d05de4bf7ee",
