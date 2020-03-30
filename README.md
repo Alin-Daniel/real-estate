@@ -2,6 +2,7 @@
 
 Hi there!
 I created this modern looking Real Estate landing page using CSS grids. It has a neat design and it is responsive.
+I added a filter feature so you can filter houses by their price, number of rooms or bathrooms. You can click View properties button from the landing page and from there you can sort and see a short summary about each house.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
